@@ -1,0 +1,19 @@
+<resources>
+    <string name="hello_world">Hello Round World!</string>
+    <string name="app_name">Wear Drawers</string>
+
+    <!--
+    Reference name for each planet's information array.
+    -->
+
+    <!--
+    Keys for planet array information below:
+        "Planet Name",
+        "Navigation icon",
+        "Drawable for planet"
+        "Number of Moons",
+        "Volume"
+        "Surface Area"
+    -->
+
+</resources>

@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kitchenessecke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textOff="Licht Essecke on"
+        android:textOn="Licht Essecke off" />
+
+    <ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kitchenspotsfront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textOff="Spots Front on"
+        android:textOn="Spots Front off" />
+
+    <ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kitchenspotsinsel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textOff="Spots Insel on"
+        android:textOn="Spots Insel off" />
+
+    <ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/kitchenspotswand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textOff="Spots Wand on"
+        android:textOn="Spots Wand off" />
+</LinearLayout>

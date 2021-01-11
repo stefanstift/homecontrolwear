@@ -1,0 +1,7 @@
+<ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/officelightmain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textOn="Licht Haupt off"
+    android:textOff="Licht Haupt on"
+    android:gravity="center"/>
