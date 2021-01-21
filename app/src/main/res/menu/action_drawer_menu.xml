@@ -16,6 +16,9 @@
     <item android:id="@+id/menu_all_lights_off"
         android:icon="@drawable/ic_baseline_highlight_off_24"
         android:title="All lights off"/>
+    <item android:id="@+id/menu_eg_lights_off"
+        android:icon="@drawable/ic_baseline_highlight_off_24"
+        android:title="EG lights off"/>
     <item android:id="@+id/menu_scene_cinema"
         android:icon="@drawable/ic_baseline_airplay_24"
         android:title="Cinema mode" />

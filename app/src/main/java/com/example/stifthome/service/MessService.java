@@ -14,4 +14,12 @@ public class MessService extends HomeService {
         getFloat("mess/feeledtemp", messCallback);
     }
 
+    public void getTemp(MessCallback messCallback) {
+        getFloat("mess/temp", messCallback);
+    }
+
+    public void getWind(MessCallback messCallback) {
+        getFloat("mess/windspeed", messCallback);
+    }
+
 }

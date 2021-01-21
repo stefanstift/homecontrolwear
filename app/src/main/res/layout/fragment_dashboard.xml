@@ -4,6 +4,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +18,7 @@
             android:src="@drawable/ic_thermometer_low"/>
 
         <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/feeledTemp"
+            android:id="@+id/temp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="12"
@@ -24,6 +26,48 @@
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_cloud_queue_24"/>
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/wind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="12"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_refresh_24" />
+
+    </LinearLayout>
+
+
 
 
 

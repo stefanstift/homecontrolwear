@@ -14,4 +14,9 @@ public class FloorService extends HomeService {
         switchIt("floor/all/light/off");
     }
 
+
+    public void egLightsOff() {
+        switchIt("floor/eg/light/off");
+    }
+
 }

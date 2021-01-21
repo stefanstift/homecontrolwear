@@ -2,6 +2,10 @@ package com.example.stifthome;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
+import android.net.NetworkRequest;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -50,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements
 
         setContentView(R.layout.activity_main);
 
+        enforceWlan();
+
         // Enables Ambient mode.
         AmbientModeSupport.attach(this);
 
@@ -80,6 +86,27 @@ public class MainActivity extends AppCompatActivity implements
          * a user clicking on your View.
          */
         onItemSelected(0);
+    }
+
+    private void enforceWlan() {
+
+        final ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager.NetworkCallback networkCallback = new ConnectivityManager.NetworkCallback() {
+            @Override
+            public void onAvailable(Network network) {
+                if (connectivityManager.bindProcessToNetwork(network)) {
+                    // socket connections will now use this network
+                } else {
+                    // app doesn't have android.permission.INTERNET permission
+                }
+            }
+        };
+
+        NetworkRequest request = new NetworkRequest.Builder()
+                .addTransportType(NetworkCapabilities.TRANSPORT_WIFI)
+                .build();
+
+        connectivityManager.requestNetwork(request, networkCallback);
     }
 
     private void setTitle() {
@@ -115,6 +142,9 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case R.id.menu_scene_cinema:
                 sceneService.cinema();
+                break;
+            case R.id.menu_eg_lights_off:
+                floorService.egLightsOff();
                 break;
         }
 
